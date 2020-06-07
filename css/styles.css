@@ -11,7 +11,7 @@
 body {
     font-family: 'Arial', sans-serif;
     --webkit-font-smoothing: antialiased;
-    background: #fff;
+    background: #000;
     color: #999;
 }
 
@@ -30,6 +30,12 @@ a {
 
 img {
     max-width: 100%;
+}
+
+video {
+    display: inline-block;
+    vertical-align: baseline;
+    object-fit: contain;
 }
 
 p {
@@ -118,4 +124,54 @@ p {
 
 .btn-xl i {
     margin-left: 1rem;
+}
+
+/* Animation Cards */
+
+.animation-card-container {
+    border-bottom: 8px solid #222;
+}
+
+.animation-text {
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.animation-text h1 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.animation-text p {
+    font-size: 1.2rem;
+    padding: 0 30px 0 30px;
+    margin: auto;
+}
+
+.animation-img {
+    position: relative;
+}
+
+.animation-img .story-card-img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+.animation-video {
+    width: 100%;
+    height: 100%;
+    max-width: 72.5%;
+    max-height: 72%;
+    position: absolute;
+    top: 47.5%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+}
+
+.animation-video  .story-card-video {
+    width: 100%;
+    height: 100%;
 }
