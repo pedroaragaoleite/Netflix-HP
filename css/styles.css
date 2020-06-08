@@ -128,8 +128,9 @@ p {
 
 /* Animation Cards */
 
-.animation-card-container {
+.animation-card {
     border-bottom: 8px solid #222;
+    padding: 45px 45px ;
 }
 
 .animation-text {
@@ -158,6 +159,7 @@ p {
     position: relative;
     max-width: 100%;
     height: auto;
+    z-index: 2;
 }
 
 .animation-video {
@@ -206,4 +208,42 @@ p {
 
 .animation-bottom .animation-gif img{
     height: 40px;
+}
+
+.animation-img .card3 {
+    max-width: 60%;
+    top: 33%;
+}
+
+/* FAQ */
+
+.faq {
+    border-bottom: 8px solid #222;
+    padding: 45px 0 45px 0;
+}
+
+.faq h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.questions-content li {
+    margin-bottom: 10px;
+}
+
+.faq-answer {
+    margin-top: 1px;    
+    background: #282525;
+}
+
+.questions-content .btn-faq {
+    font-size: 18px;
+    width: 100%;
+    background: #282525;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    border: 0;
+    padding: 16px 30px 16px 30px ;
+    text-align: left;
 }
