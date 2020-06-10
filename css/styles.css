@@ -217,29 +217,21 @@ p {
 
 /* FAQ */
 
-.faq {
+.faq-accordion {
     border-bottom: 8px solid #222;
     padding: 45px 0 45px 0;
 }
 
-.faq h1 {
+.faq-accordion h1 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.questions-content li {
+.faq-question  {
     margin-bottom: 10px;
-}
-
-.faq-answer {
-    margin-top: 1px;    
     background: #282525;
-}
-
-.questions-content .btn-faq {
     font-size: 18px;
-    width: 100%;
-    background: #282525;
+    width: 100%;    
     cursor: pointer;
     color: #fff;
     position: relative;
@@ -247,3 +239,40 @@ p {
     padding: 16px 30px 16px 30px ;
     text-align: left;
 }
+
+.faq-question:target .answer {
+    max-height: 15em;
+    margin-top: 10px;
+    /* color: red; */
+}
+
+.faq-question:target .fa-times {
+    display: none;
+}
+
+.faq-question .answer {
+    max-height: 0; 
+    overflow: hidden; 
+    position: relative; 
+    transition: max-height 200ms;
+}
+
+.question-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question-link .fa-times {
+    display: none;
+}
+
+.faq-question:target .question-link .fa-plus {
+    display: none;
+}
+
+.faq-question:target .question-link .fa-times {
+    display: block;
+}
+
+
